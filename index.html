@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <style>
+            .winner {
+                color: green
+            }
+
+            .loser {
+                color: red
+            }
+        </style>
+
+    </head>
+
+
+
+    <body style=" display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; /* ให้เต็มจอแนวตั้ง */
+            margin: 0; 
+             ">
+
+        <h1><span id="p1Display">0</span> to <span id="p2Display">0</span></h1>
+        <h1>
+            <img src="https://t3.ftcdn.net/jpg/03/13/47/78/360_F_313477805_FjdtYLHA78oQBs4sYkPhVwNFDBotcCGi.jpg" alt=""
+                style="border-radius: 30px;">
+        </h1>
+        <div>
+            <select name="" id="playto">
+                <option value="3">3</option>
+                <option value="5">5</option>
+                <option value="7">7</option>
+            </select>
+            <button id="plusbutton" type="button" class="btn btn-success">+player one</button>
+            <button id="minusbutton" type="button" class="btn btn-warning">+player two</button>
+            <button id="resetbutton" type="button" class="btn btn-danger">reset</button>
+
+        </div>
+
+    </body>
+
+    <script src="./app.js"></script>
+
+</html>
